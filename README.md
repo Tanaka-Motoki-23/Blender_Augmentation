@@ -49,7 +49,7 @@ random.seed(0)
 save_path = 'D:/Blender/Render_Results/'
 ```
 
-実際にレンダリングを行ってデータを生成する際は以下の例ように設定します。
+実際にレンダリングを行ってデータを生成する際は以下のように設定します。
 ```bash
 is_reset = True
 is_check = True　

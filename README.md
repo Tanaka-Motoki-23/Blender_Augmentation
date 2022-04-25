@@ -31,7 +31,7 @@
 
 # 利用方法
 リポジトリに含まれるdata_Render.blendをBlender2.8(or later)で開きます。  
-Scriptsタブに切り替え、データ生成の設定用の変数を設定します。
+Scriptsタブに切り替え、データ生成の設定用の変数を確認します。
 
 ![スクリーンショット 2022-04-26 072221](https://user-images.githubusercontent.com/104173409/165185739-ef5f7072-6aa6-4c1e-a8b7-993a2b6f5852.png)
 

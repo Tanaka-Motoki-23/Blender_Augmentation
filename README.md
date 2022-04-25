@@ -21,14 +21,14 @@
 
 ### セグメンテーションマップ
 
-レンダリングされるセグメンテーションマップは、以下のようにクラス数と最大インスタンス数に合わせて色相と明度を離散化し、自動的にマテリアルが生成されます。
+セグメンテーションマップは、以下のようにクラス数と最大インスタンス数に合わせて色相と明度を離散化し、自動的にマテリアルが生成されます。
 
 ![color](https://user-images.githubusercontent.com/104173409/165187693-edaa6c51-4737-4bd0-ad31-0fa88ead6f9b.png)
 
 - - -
 
 # 利用方法
-リポジトリに含まれるdata_Render.blendをBlender2.8(or later)で開きます。　　
+リポジトリに含まれるdata_Render.blendをBlender2.8(or later)で開きます。  
 Scriptsタブに切り替え、データ生成の設定用の変数を設定します。
 
 ![スクリーンショット 2022-04-26 072221](https://user-images.githubusercontent.com/104173409/165185739-ef5f7072-6aa6-4c1e-a8b7-993a2b6f5852.png)

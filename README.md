@@ -25,15 +25,16 @@ Scriptsタブに切り替え、データ生成の設定用の変数を設定し�
 
 ![スクリーンショット 2022-04-26 072221](https://user-images.githubusercontent.com/104173409/165185739-ef5f7072-6aa6-4c1e-a8b7-993a2b6f5852.png)
 
+以下の設定を変更して作業を行うことで、レンダリングまでの一連の処理フローを行わなくとも、ランダマイズと配置を行った結果を確認できます。
 ```bash
 # オブジェクト配置・レンダリング後にシーンをリセットするかどうか。
-is_reset = True　
+is_reset = False
 
 # 物理演算配置したオブジェクトから不自然な見た目のオブジェクトを取り除くかどうか。
 is_check = True　
 
 # オブジェクト配置後にレンダリングしてデータを書き出すかどうか。
-is_render = True
+is_render = False
 
 # 何枚の画像を生成するか。
 render_num = 6000
@@ -45,6 +46,17 @@ max_fish_num = 6
 random.seed(0)
 
 #レンダリングした画像・セグメンテーションマップ・レンダリング後の画像上のキーポイント座標の保存先
+save_path = 'D:/Blender/Render_Results/'
+```
+
+実際にレンダリングを行ってデータを生成する際は以下の例ように設定します。
+```bash
+is_reset = True
+is_check = True　
+is_render =True
+render_num = 6000
+max_fish_num = 6
+random.seed(0)
 save_path = 'D:/Blender/Render_Results/'
 ```
 

@@ -79,7 +79,7 @@ save_path = 'D:/Blender/Render_Results/'
 
 ![スクリーンショット 2022-04-26 060932](https://user-images.githubusercontent.com/104173409/165175495-69ca3d82-e339-4453-a675-b2b812303438.png)
 
-コード内に作成したオブジェクトの情報を追記します。
+コード内に作成したオブジェクトの情報を記入したベースとなるオブジェクトを記入します。
 ```bash
 オブジェクト情報一覧
 
@@ -106,4 +106,35 @@ texture_material_name='aji'
 #テクスチャ(切り抜き画像)のファイル名
 texture_image_name='aji.png'
 
+#セグメンテーションマップに利用する色相
+class_color='green',
+
+#クラスID
+#class_id = 1
+
+#クラスID
+#class_id = 1
+```
+上記の情報をFishDataクラスのインスタンスとしてリストに追加します。
+```
+fish_data_base = FishData(bone_name='aji_bone_key'+is_3D,
+                            mesh_name='aji_mesh_key'+is_3D,
+                            keys_name_list = ['mouth_aji',
+                                                'eye_aji',
+                                                'pectoral_fin_aji',
+                                                'pelvic_fin_aji',
+                                                'dorsal_fin_aji',
+                                                'tail_fin_root_aji',
+                                                'tail_fin_top_aji',
+                                                'tail_fin_center_aji',
+                                                'tail_fin_bottom_aji'],
+                            texture_material_name='aji',
+                            texture_image_name='aji.png',
+                            class_color='blue',
+                            class_id = 2,
+                            instance_id=0)
+fish_data_base.hide_render = True
+fish_data_base.set_rigidbody_type(rigidbody_type=1)
+
+base_fish_list.append(fish_data_base)
 ```

@@ -79,7 +79,7 @@ save_path = 'D:/Blender/Render_Results/'
 
 ![スクリーンショット 2022-04-26 060932](https://user-images.githubusercontent.com/104173409/165175495-69ca3d82-e339-4453-a675-b2b812303438.png)
 
-前準備が完了したオブジェクトの情報をFishDataクラスのインスタンスとしてリストに追加します。
+前準備が完了したオブジェクトの情報をFishDataクラスのインスタンスとしてリストに追加することで、自動生成に利用できます。
 ```
 fish_data_base = FishData(bone_name='aji_bone_key',
                             mesh_name='aji_mesh_key',

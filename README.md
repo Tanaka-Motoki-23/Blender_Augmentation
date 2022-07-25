@@ -1,5 +1,6 @@
 # BlenderによるCGデータセット生成ツール
-paper 人工知能全国大会(2021): https://www.jstage.jst.go.jp/article/pjsai/JSAI2021/0/JSAI2021_3G4GS2i02/_article/-char/ja
+paper : 人工知能全国大会(2021): https://www.jstage.jst.go.jp/article/pjsai/JSAI2021/0/JSAI2021_3G4GS2i02/_article/-char/ja
+
 3DCGソフトウェアであるBlenderを自動化したインスタンスセグメンテーション・キーポイント検出用のCGを用いた魚向けデータ拡張・生成ツールです。
 
 ![render_results](https://user-images.githubusercontent.com/104173409/165160796-8c83ae61-075f-4483-abcd-3a50761129e4.png)
